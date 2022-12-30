@@ -19,6 +19,16 @@ func (c *Client) PurchaseShippingLabel(input *models.TransactionInput) (*models.
 	return output, err
 }
 
+func (c *Client) PurchaseShippingLabelInstant(input *models.InstantTransactionInput) (*models.Transaction, error) {
+	if input == nil {
+		return nil, errors.New("nil input")
+	}
+
+	output := &models.Transaction{}
+	err := c.do(http.MethodPost, "/transactions/", input, output)
+	return output, err
+}
+
 // RetrieveTransaction retrieves an existing transaction by object id.
 func (c *Client) RetrieveTransaction(objectID string) (*models.Transaction, error) {
 	if objectID == "" {
