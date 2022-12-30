@@ -44,3 +44,17 @@ func (c *Client) ListAllAddresses() ([]*models.Address, error) {
 	})
 	return list, err
 }
+
+// ValidateAddress validates an address.
+func (c *Client) ValidateAddress(input *models.AddressInput) (*models.Address, error) {
+	if input == nil {
+		return nil, errors.New("nil input")
+	}
+
+	// Add validate parameter to the request.
+	input.Validate = true
+
+	output := &models.Address{}
+	err := c.do(http.MethodPost, "/addresses/", input, output)
+	return output, err
+}
