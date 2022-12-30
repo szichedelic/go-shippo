@@ -4,7 +4,7 @@ import "time"
 
 // See https://goshippo.com/docs/reference#transactions
 type TransactionInput struct {
-	Rate          string `json:"rate,omitempty"`
+	Rate          Rate  `json:"rate"`
 	Metadata      string `json:"metadata,omitempty"`
 	LabelFileType string `json:"label_file_type"`
 	Async         bool   `json:"async"`
