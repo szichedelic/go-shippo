@@ -4,7 +4,7 @@ import (
 	"errors"
 	"net/http"
 
-	"github.com/coldbrewcloud/go-shippo/models"
+	"github.com/szichedelic/go-shippo/models"
 )
 
 // GetTrackingUpdate requests the tracking status of a shipment.

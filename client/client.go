@@ -10,8 +10,8 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/coldbrewcloud/go-shippo/errors"
-	"github.com/coldbrewcloud/go-shippo/models"
+	"github.com/szichedelic/go-shippo/errors"
+	"github.com/szichedelic/go-shippo/models"
 )
 
 const (

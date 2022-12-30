@@ -1,8 +1,9 @@
 # Shippo API Golang Wrapper
 
-Documentation: https://godoc.org/github.com/coldbrewcloud/go-shippo/client
+Documentation: https://godoc.org/github.com/szichedelic/go-shippo/client
 
 ## Examples
+
 ```go
 package main
 
@@ -12,9 +13,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/coldbrewcloud/go-shippo"
-	"github.com/coldbrewcloud/go-shippo/client"
-	"github.com/coldbrewcloud/go-shippo/models"
+	"github.com/szichedelic/go-shippo"
+	"github.com/szichedelic/go-shippo/client"
+	"github.com/szichedelic/go-shippo/models"
 )
 
 func main() {
@@ -122,4 +123,4 @@ func dump(v interface{}) string {
 
 ```
 
-See [more examples](https://github.com/coldbrewcloud/go-shippo/tree/master/_examples).
+See [more examples](https://github.com/szichedelic/go-shippo/tree/master/_examples).
